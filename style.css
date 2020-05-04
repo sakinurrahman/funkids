@@ -1,0 +1,112 @@
+:root {
+    --body-bg:#333;
+    --font-color: #fff;
+    --primary-color: #008ed6;
+}
+
+body {
+    background: var(--body-bg);
+    color: var(--font-color);
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    border-bottom: 3px solid var(--primary-color);
+    background: #292b2c;
+    opacity: 1;
+}
+
+#home-section {
+    background: url('./images/macbook-pro-on-white-table-3787866.jpg') no-repeat center  top;
+    background-size: cover;
+    height:100%;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+#home-section .dark-overlay {
+    background: rgba(0,0,0,0.7);
+    height: 100%;
+}
+
+#home-section .fa  {
+    background-color: var(--font-color);
+    padding: 4px;
+    color: var(--primary-color);
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+.card-opacity {
+    opacity: .8;
+}
+
+#home-section .home-inner  {
+     padding-top: 150px;
+     padding-bottom: 50px;
+}
+
+#explore-head-section {
+    overflow: hidden;
+}
+
+#explore-main-section .fa , #create-main-section .fa {
+     font-size: 32px;
+     background: var(--body-bg);
+     color: white;
+     border-radius: 5px;
+     padding: 2px;
+}
+
+.fa-bars , .fa-times {
+    margin-top: -3px !important;
+    font-size: 39px !important!;
+}
+
+.fa-times {
+    display: none;
+}
+
+
+@media screen and (max-width:767px) {
+    #home-section h1 {
+         font-size: 36px;
+         text-align: center;
+         padding-bottom: 2rem;
+    }
+
+    #home-section .home-inner  {
+        padding-top: 100px;
+        padding-bottom: 50px;
+   }
+
+   #home-section .sign-box , .fa {
+    padding: 2px !important;
+    font-size: 20px !important;
+   }
+
+   #home-section  .benefit-description {
+       padding: 7px !important;
+   }
+
+   /********* explore-main-section *********/
+
+   #explore-main-section .sign-box , .fa {
+      padding: 2px !important;
+      font-size: 20px !important;
+      margin-top: .6rem;
+   }
+
+   #explore-main-section .use-horizantal {
+       border-top: 2px solid gray;
+   }
+
+   #explore-main-section  .benefit-description {
+       padding: 7px !important;
+   }
+
+   #create-head-section {
+       background: #007bff !important;
+   }
+
+}
